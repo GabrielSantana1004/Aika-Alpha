@@ -7,7 +7,9 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.6-sol")
+#OPENAI_MODEL= os.getenv("OPENAI_MODEL_LUNA", "gpt-5.6-luna")
+#OPENAI_MODEL= os.getenv("OPENAI_MODEL_LUNA", "gpt-4.1-mini")
 MAX_HISTORY_MESSAGES = int(os.getenv("MAX_HISTORY_MESSAGES", "20"))
 
 
