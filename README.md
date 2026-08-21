@@ -1,4 +1,4 @@
-# Meu Bot IA
+# Aika Alpha
 
 Bot de Discord com personalidade própria, usando a API da OpenAI (com function
 calling) para responder mensagens, saber a data/hora atual e pesquisar na web
@@ -7,7 +7,7 @@ via Tavily.
 ## Estrutura
 
 ```
-meu_bot_ia/
+Aika_Alpha/
 ├── main.py                  # ponto de entrada
 ├── config.py                 # variáveis de ambiente
 ├── core/
@@ -27,7 +27,7 @@ meu_bot_ia/
 
 ## Como rodar
 
-1. Crie um ambiente virtual (opcional mas recomendado):
+1. Crie um ambiente virtual:
    ```
    python -m venv venv
    venv\Scripts\activate      # Windows
@@ -39,7 +39,7 @@ meu_bot_ia/
    pip install -r requirements.txt
    ```
 
-3. Copie `.env.example` para `.env` e preencha com suas chaves:
+3. Crie `.env` e preencha com suas chaves:
    ```
    DISCORD_TOKEN=...
    OPENAI_API_KEY=...
