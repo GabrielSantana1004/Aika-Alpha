@@ -4,6 +4,7 @@ from discord.ext import commands
 from config import DISCORD_TOKEN, validate_config
 from discord_bot.events import registrar_eventos
 from discord_bot.commands import registrar_comandos
+from discord_bot.message_log import registrar_log_de_mensagens
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -20,6 +21,7 @@ def main():
 
     registrar_eventos(bot)
     registrar_comandos(bot)
+    registrar_log_de_mensagens(bot)
 
     if not DISCORD_TOKEN:
         logger.error("DISCORD_TOKEN não configurado. Confira seu arquivo .env.")

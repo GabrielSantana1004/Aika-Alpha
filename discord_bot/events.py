@@ -54,8 +54,8 @@ def registrar_eventos(bot: commands.Bot):
             await message.reply("Fala! Me chamou, pode falar o que precisa.")
             return
 
-        chave_historico = memory.build_chave(message.channel.id, message.author.id)
-        memory.adicionar_mensagem(chave_historico, "user", conteudo)
+        chave_historico = memory.build_chave(message.channel.id)
+        memory.adicionar_mensagem_usuario(chave_historico, message.author.display_name, conteudo)
 
         async with message.channel.typing():
             historico = memory.get_historico(chave_historico)
@@ -65,6 +65,6 @@ def registrar_eventos(bot: commands.Bot):
                 logger.error(f"Erro ao gerar resposta: {e}")
                 resposta = "Deu ruim aqui do meu lado agora, tenta de novo daqui a pouco."
 
-        memory.adicionar_mensagem(chave_historico, "assistant", resposta)
+        memory.adicionar_mensagem_assistente(chave_historico, resposta)
 
         await message.reply(resposta[:2000])  # limite de caracteres do Discord
