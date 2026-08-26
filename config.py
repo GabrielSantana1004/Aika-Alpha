@@ -9,6 +9,10 @@ TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.6-sol")
 #OPENAI_MODEL= os.getenv("OPENAI_MODEL_LUNA", "gpt-5.6-luna")
+<<<<<<< HEAD
+=======
+#OPENAI_MODEL= os.getenv("OPENAI_MODEL_LUNA", "gpt-4.1-mini")
+>>>>>>> 340fb43e07e6c170a8476eb2ee1d0ba8f8544c32
 MAX_HISTORY_MESSAGES = int(os.getenv("MAX_HISTORY_MESSAGES", "20"))
 
 # Log de mensagens apagadas — IDs separados por vírgula no .env
