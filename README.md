@@ -8,18 +8,18 @@ via Tavily.
 
 ```
 Aika_Alpha/
-├── main.py                  # ponto de entrada
-├── config.py                 # variáveis de ambiente
+├── main.py                         # ponto de entrada
+├── config.py                       # variáveis de ambiente
 ├── core/
-│   ├── personality.py         # personalidade / system prompt
-│   ├── ai_client.py           # chamadas à OpenAI + loop de function calling
-│   ├── tools_manager.py        # registro central das ferramentas
-│   └── memory.py                # histórico de conversa por canal
+│   ├── personality.py              # personalidade / system prompt
+│   ├── ai_client.py                # chamadas à OpenAI + loop de function calling
+│   ├── tools_manager.py            # registro central das ferramentas
+│   └── memory.py                   # histórico de conversa por canal
 ├── tools/
-│   ├── datetime_tool.py         # data/hora atual
-│   └── search_tool.py            # pesquisa via Tavily
+│   ├── datetime_tool.py            # data/hora atual
+│   └── search_tool.py              # pesquisa via Tavily
 ├── discord_bot/
-│   ├── events.py                  # on_ready, on_message (menções)
+│   ├── events.py                   # on_ready, on_message (menções)
 │   └── commands.py                 # comandos como !reset
 └── utils/
     └── logger.py                   # logging padronizado
